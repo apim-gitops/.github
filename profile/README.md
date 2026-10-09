@@ -30,9 +30,9 @@ flowchart LR
 
 | Repository | Role | Start here if you want to... |
 |---|---|---|
-| [`wso2-apim-app`](link) | Custom Docker image, UI customizations, build/test/push pipeline | See how the image is built and versioned |
-| [`wso2-apim-helm`](link) | Helm chart, the GitOps source of truth | See how WSO2 is deployed and configured |
-| [`ci-app-pipelines`](link) | Jenkins pipelines for Gitflow releases and hotfixes | See how releases are automated |
+| [`wso2-apim-app`](https://github.com/apim-gitops/wso2-apim-app) | Custom Docker image, UI customizations, build/test/push pipeline | See how the image is built and versioned |
+| [`wso2-apim-helm`]([link](https://github.com/apim-gitops/wso2-apim-app)) | Helm chart, the GitOps source of truth | See how WSO2 is deployed and configured |
+| [`ci-app-pipelines`]([link](https://github.com/apim-gitops/wso2-apim-app)) | Jenkins pipelines for Gitflow releases and hotfixes | See how releases are automated |
 
 ## Scope
 
@@ -75,11 +75,3 @@ Details, guard rails and diagrams: see [`ci-app-pipelines`](link).
 | Secrets | CSI Secret Store |
 | UI | React (WSO2 Carbon UI), Node.js 22, npm, Lerna |
 | Scripting | Groovy, Bash |
-
-## Stakeholders
-
-| Role | Responsibility |
-|---|---|
-| Platform / DevOps | Pipelines, Helm chart, release automation |
-| API product teams | API definitions and policies; merge PRs to `develop` |
-| Inetum Tunisie | Owns the branded distribution and deployment targets |
